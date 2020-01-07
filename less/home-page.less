@@ -2,10 +2,16 @@
 .one {
     
     height: 754px;
+    
 
     .image-back {
         background-image: url("MobileImg.png");
         height: 754px;
+        
+        @media(min-width: 1023px) {
+            background-image: url("DesktopBack.png");
+            width: 1024px;
+        }
     }
 
     h1 {
@@ -42,7 +48,13 @@
     display: flex;
     flex-flow: wrap;
     justify-content: center;
+    align-items: center;
     background-color: #171330;
+    height: 754px;
+    @media(min-width: 1023px) {
+        height: 770px;
+    }
+    
 
     .box {
         border: 4px solid white;
@@ -53,10 +65,74 @@
         color: white;
         text-align: center;
         
+        .tablet {
+            display: none;
+        }
+
         h3 {
-            font-family: "Abril Fatface";
+            font-family: "Abril Fatface" sans-serif;
             font-size: 14px;
             line-height: 19px;
+            margin-top: 12px;
+        }
+
+        p {
+            font-family: "Montserrat" sans-serif;
+            font-size: 10px;
+            line-height: 12px;
+            
+        }
+
+        img {
+            margin: 0 0 10px 0;
+        }
+
+        @media(min-width: 1023px) {
+            width: 404px;
+            height: 339px;
+            // margin-bottom: 16px;
+
+            .mobile {
+                display: none;
+            }
+
+            .tablet {
+                display: inherit;
+            }
+
+            h3 {
+                font-size: 24px;
+                line-height: 32px;
+                margin-top: 19px;
+            }
+    
+            p {
+                font-size: 18px;
+                line-height: 22px;
+                margin-top: 10px;
+            }
+    
+            img {
+                margin: 0 0 10px 0;
+            }
+        }
+
+        
+    }
+
+    .a {
+        border: 4px solid white;
+        width: 151px;
+        height: 232px;
+        margin: 0 8px;
+        color: white;
+        text-align: center;
+        
+        h3 {
+            font-family: "Abril Fatface" sans-serif;
+            font-size: 14px;
+            line-height: 19px;
+            margin-top: 19px;
         }
 
         p {
@@ -64,7 +140,24 @@
             font-size: 10px;
             line-height: 12px;
         }
-    }
-}
 
+        @media(min-width: 1023px) {
+            width: 404px;
+            height: 339px;
+
+            h3 {
+                font-size: 24px;
+                line-height: 32px;
+            }
+    
+            p {
+                font-size: 18px;
+                line-height: 22px;
+            }
+
+            
+        }
+        
+}
+}
 
