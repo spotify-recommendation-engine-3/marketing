@@ -87,16 +87,28 @@ p {
   font-size: 1.6rem;
   line-height: 1.4;
 }
+nav {
+  padding: 0.5rem;
+  display: flex;
+  justify-content: right;
+  flex-wrap: wrap;
+}
+nav a {
+  text-decoration: none;
+  color: #191414;
+  font-size: 3rem;
+  margin: 0 1rem;
+}
 header {
   background-color: #FFFFFF;
-  padding: 3rem;
+  padding: 0.5rem;
 }
 header h1 {
   margin: 2rem;
 }
 #devs {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: wrap-reverse;
   width: 80%;
   margin: 0 auto;
 }
