@@ -95,11 +95,19 @@ header h1 {
   margin: 2rem;
 }
 #devs {
-  margin: 5%;
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: 0 auto;
 }
 #devs .box {
-  border: 1rem solid #FFFFFF;
-  display: flex;
-  flex-direction: column;
-  width: 20%;
+  margin: 10px;
+  margin: 5rem auto;
+}
+#devs .box h2 {
+  font-size: 5rem;
+  padding: 1rem;
+}
+#devs .box p {
+  font-size: 2.5rem;
 }
