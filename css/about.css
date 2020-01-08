@@ -94,6 +94,12 @@ header {
 header h1 {
   margin: 2rem;
 }
+#devs {
+  margin: 5%;
+}
 #devs .box {
-  padding: 3%;
+  border: 1rem solid #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  width: 20%;
 }
