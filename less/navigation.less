@@ -1,10 +1,28 @@
-.topnav {
+#topnav {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
     width: 100%;
-    padding: 10px;
-    background-color: rgb(255, 255, 255);
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.691);
 
     img {
-        width: 150px;
+        width: 120px;
+        @media(min-width: 1023px) {
+            width: 150px;
+        }
     }
+
+    a { 
+        text-decoration: none;
+        font-size: 13px;
+        font-weight: bold;
+        padding-right: 14px;  
+        color: #191414;
+        
+        &:hover {
+            color: lighten(#191414, 20%);
+        }
+    }
+
 }

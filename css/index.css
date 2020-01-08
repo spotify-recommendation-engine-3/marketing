@@ -131,17 +131,18 @@ table {
 }
 html {
   font-size: 62.5%;
+  font-family: 'Questrial', sans-serif;
 }
 html,
 body {
-  font-family: 'Ubuntu', sans-serif;
+  font-family: 'Questrial', sans-serif;
 }
 h1,
 h2,
 h3,
 h4,
 h5 {
-  font-family: 'Russo One', sans-serif;
+  font-family: 'Questrial', sans-serif;
 }
 h2 {
   font-size: 3.2rem;
@@ -157,32 +158,59 @@ p {
   width: 100%;
   margin: 0 auto;
 }
-.topnav {
+#topnav {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
   width: 100%;
-  padding: 10px;
-  background-color: #ffffff;
+  padding: 15px;
+  background-color: rgba(255, 255, 255, 0.691);
 }
-.topnav img {
-  width: 150px;
+#topnav img {
+  width: 120px;
+}
+@media (min-width: 1023px) {
+  #topnav img {
+    width: 150px;
+  }
+}
+#topnav a {
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: bold;
+  padding-right: 14px;
+  color: #191414;
+}
+#topnav a:hover {
+  color: #524141;
+}
+#container {
+  background: linear-gradient(250deg, #05d5ff 15%, #53f 94%);
 }
 .one {
+  text-align: center;
   height: 754px;
+  width: 100%;
 }
 .one .image-back {
-  background-image: url("MobileImg.png");
-  height: 754px;
+  background-image: url("DesktopBack.jpg");
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  height: 100%;
 }
 @media (min-width: 1023px) {
   .one .image-back {
-    background-image: url("DesktopBack.png");
-    width: 1024px;
+    height: 754px;
+    width: 100%;
   }
 }
 .one h1 {
-  font-size: 36px;
-  font-family: "Abril Fatface", sans-serif;
-  color: white;
+  margin-top: 30px;
+  font-size: 50px;
+  font-weight: bold;
+  font-family: 'Questrial', sans-serif;
+  color: black;
 }
 .one h2 {
   color: white;
@@ -195,7 +223,6 @@ p {
   border-radius: 15px;
   padding: 10px 15px;
   width: 100px;
-  font-family: Muli;
   font-style: normal;
   font-weight: 900;
   font-size: 12px;
@@ -209,8 +236,7 @@ p {
   flex-flow: wrap;
   justify-content: center;
   align-items: center;
-  background-color: #171330;
-  height: 754px;
+  height: 813px;
 }
 @media (min-width: 1023px) {
   .two {
@@ -218,11 +244,14 @@ p {
   }
 }
 .two .box {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
   border: 4px solid white;
   width: 151px;
   height: 290px;
   margin: 0 8px;
-  margin-top: 55px;
   color: white;
   text-align: center;
 }
@@ -230,18 +259,21 @@ p {
   display: none;
 }
 .two .box h3 {
-  font-family: "Abril Fatface" sans-serif;
   font-size: 14px;
   line-height: 19px;
   margin-top: 12px;
 }
 .two .box p {
-  font-family: "Montserrat" sans-serif;
   font-size: 10px;
   line-height: 12px;
 }
 .two .box img {
   margin: 0 0 10px 0;
+}
+@media (min-width: 1023px) {
+  .two .box img {
+    margin-left: 10px;
+  }
 }
 @media (min-width: 1023px) {
   .two .box {
@@ -273,17 +305,16 @@ p {
   width: 151px;
   height: 232px;
   margin: 0 8px;
+  margin-top: -250px;
   color: white;
   text-align: center;
 }
 .two .a h3 {
-  font-family: "Abril Fatface" sans-serif;
   font-size: 14px;
   line-height: 19px;
   margin-top: 19px;
 }
 .two .a p {
-  font-family: "Montserrat" sans-serif;
   font-size: 10px;
   line-height: 12px;
 }
@@ -291,6 +322,7 @@ p {
   .two .a {
     width: 404px;
     height: 339px;
+    margin-top: -50px;
   }
   .two .a h3 {
     font-size: 24px;

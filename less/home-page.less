@@ -1,24 +1,34 @@
-
+#container {
+    background: linear-gradient(250deg,#05d5ff 15%, #53f 94%);
+}
 .one {
     
+    text-align: center;
     height: 754px;
+    width: 100%;
     
 
     .image-back {
-        background-image: url("MobileImg.png");
-        height: 754px;
+        background-image: url("DesktopBack.jpg");
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        height: 100%;
+        
         
         @media(min-width: 1023px) {
-            background-image: url("DesktopBack.png");
-            width: 1024px;
+            // background-image: url("DesktopBack.jpg");
+            height: 754px;
+            width: 100%;
         }
     }
 
     h1 {
-    font-size: 36px;
-    // font-weight: bold;
-    font-family: "Abril Fatface", sans-serif;
-    color: white;
+    margin-top: 30px;
+    font-size: 50px;
+    font-weight: bold;
+    font-family: 'Questrial', sans-serif;
+    color: black;
     }
 
     h2 {
@@ -33,7 +43,6 @@
         border-radius: 15px;
         padding: 10px 15px;
         width: 100px;
-        font-family: Muli;
         font-style: normal;
         font-weight: 900;
         font-size: 12px;
@@ -49,19 +58,23 @@
     flex-flow: wrap;
     justify-content: center;
     align-items: center;
-    background-color: #171330;
-    height: 754px;
+    height: 813px;
+
     @media(min-width: 1023px) {
         height: 770px;
     }
     
 
     .box {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
         border: 4px solid white;
         width: 151px;
         height: 290px;
         margin: 0 8px;
-        margin-top: 55px;
+        
         color: white;
         text-align: center;
         
@@ -70,14 +83,12 @@
         }
 
         h3 {
-            font-family: "Abril Fatface" sans-serif;
             font-size: 14px;
             line-height: 19px;
             margin-top: 12px;
         }
 
         p {
-            font-family: "Montserrat" sans-serif;
             font-size: 10px;
             line-height: 12px;
             
@@ -85,6 +96,9 @@
 
         img {
             margin: 0 0 10px 0;
+            @media(min-width: 1023px) {
+                margin-left: 10px;
+            }
         }
 
         @media(min-width: 1023px) {
@@ -125,18 +139,17 @@
         width: 151px;
         height: 232px;
         margin: 0 8px;
+        margin-top: -250px;
         color: white;
         text-align: center;
         
         h3 {
-            font-family: "Abril Fatface" sans-serif;
             font-size: 14px;
             line-height: 19px;
             margin-top: 19px;
         }
 
         p {
-            font-family: "Montserrat" sans-serif;
             font-size: 10px;
             line-height: 12px;
         }
@@ -144,6 +157,7 @@
         @media(min-width: 1023px) {
             width: 404px;
             height: 339px;
+            margin-top: -50px;
 
             h3 {
                 font-size: 24px;

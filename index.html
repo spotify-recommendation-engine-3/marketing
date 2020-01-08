@@ -5,28 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Questrial&display=swap');
+    </style>
     <link href="css/index.css" rel="stylesheet">
 </head>
 <body>
-    <nav class="topnav">
+    
+    <nav id="topnav">
         <a class="logo">
             <img src="img/logo.png">
         </a>
+        <div>
+            <a href="#">LOGIN</a>
+            <!-- <a href="#">SIGN UP</a> -->
+            <a href="#">DOWNLOAD</a>
+        </div>
     </nav>
 
-    <div class="container one">
+    <div id="container">
+
+    <div class="one">
         <div class="image-back">
             
-        <h1>Listen</br>Without</br>Limits</h1>
-        <h2>Discover New Music</h2>
-        <a href="#">GET STARTED</a>
+        <h1>Listen</br>Without Limits</h1>
+        <!-- <h2>Discover New Music</h2> -->
 
         </div>
 
     </div>
 
-    <div class="container two">
+    <div class="two">
         <div class="box">
             <h3 class="mobile">Enjoy</br>Your</br>Songs All</br>In One</br>Place.</h3>
             <p class="mobile">No more having</br>to switch back</br>and forth</br>between</br>applications.</br>Listen to the</br>mainstream and</br>underground all</br>in one place.</p>
@@ -35,8 +44,8 @@
             
             <img class="mobile" src="img/Group 1.png">
             <img class="mobile" src="img/Group 2.png">
-            <img class="tablet" src="#">
-            <img class="tablet" src="#">
+            <img class="tablet" src="img/Group 3.png">
+            <img class="tablet" src="img/Group 4.png">
         </div>
         <div class="box">
             <h3 class="mobile">Find new</br>music</br>literally,</br>however</br>your</br>feeling.</h3>
@@ -57,6 +66,26 @@
             <p class="tablet">Have the ability to share</br>songs and playlist with</br>friends and the</br>Symphinity community.</br>Earn a plaque on your</br>profile showing how</br>much of a tastemaker you</br>are.</p>
         </div>
     </div>
+</div>
+
+<script>
+window.onscroll = function() {myFunction()};
+
+// Get the navbar
+var navbar = document.getElementById("topnav");
+
+// Get the offset position of the navbar
+var sticky = navbar.offsetTop;
+
+// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
    
 </body>
 </html>
