@@ -1,3 +1,15 @@
+@font-face {
+  font-family: 'Russo One';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Russo One'), local('RussoOne-Regular'), url(https://fonts.gstatic.com/s/russoone/v8/Z9XUDmZRWg6M1LvRYsHOz8mM.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Ubuntu Regular'), local('Ubuntu-Regular'), url(https://fonts.gstatic.com/s/ubuntu/v14/4iCs6KVjbNBYlgoKfw7z.ttf) format('truetype');
+}
 * {
   box-sizing: border-box;
   padding: 0;
@@ -46,18 +58,6 @@ table {
 * {
   box-sizing: border-box;
 }
-@font-face {
-  font-family: 'Russo One';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Russo One'), local('RussoOne-Regular'), url(https://fonts.gstatic.com/s/russoone/v8/Z9XUDmZRWg6M1LvRYsHOz8mM.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Ubuntu';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Ubuntu Regular'), local('Ubuntu-Regular'), url(https://fonts.gstatic.com/s/ubuntu/v14/4iCs6KVjbNBYlgoKfw7z.ttf) format('truetype');
-}
 html {
   font-size: 62.5%;
   max-width: 100%;
@@ -90,8 +90,9 @@ p {
 nav {
   padding: 0.5rem;
   display: flex;
-  justify-content: right;
   flex-wrap: wrap;
+  margin: 0 auto;
+  justify-content: right;
 }
 nav a {
   text-decoration: none;
@@ -109,8 +110,8 @@ header h1 {
 #devs {
   display: flex;
   flex-wrap: wrap;
-  width: 80%;
   margin: 0 auto;
+  width: 80%;
 }
 #devs .box {
   margin: 5rem auto;
@@ -138,6 +139,6 @@ header h1 {
   display: flex;
   flex-wrap: wrap;
   margin: 0 auto;
-  width: 90%;
+  width: 100%;
   flex-direction: column;
 }
