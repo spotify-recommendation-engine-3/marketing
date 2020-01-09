@@ -164,7 +164,9 @@ p {
   align-items: center;
   width: 100%;
   padding: 15px;
-  background-color: rgba(255, 255, 255, 0.691);
+  background-color: #ffffff;
+  position: sticky;
+  top: 0;
 }
 #topnav img {
   width: 120px;
