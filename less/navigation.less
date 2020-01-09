@@ -3,14 +3,18 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    padding: 15px;
-    background-color: rgb(255, 255, 255);
+    padding: 8px;
+    background-color: @topnav-color;
     position: sticky;  top: 0; //making topnav sticky
-
+    @media(min-width: 1023px) {
+        padding: 15px;
+        
+    }
     img {
         width: 120px;
         @media(min-width: 1023px) {
-            width: 150px;
+            width: 200px;
+            
         }
     }
 
@@ -23,6 +27,11 @@
         
         &:hover {
             color: lighten(#191414, 20%);
+        }
+
+        @media(min-width: 1023px) {
+            width: 200px;
+            font-size: 23px;
         }
     }
 
