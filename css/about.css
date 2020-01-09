@@ -134,3 +134,10 @@ header h1 {
 #devs .box a:focus {
   color: #FFFFFF;
 }
+#devs .help {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  width: 90%;
+  flex-direction: column;
+}
