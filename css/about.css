@@ -1,0 +1,144 @@
+@font-face {
+  font-family: 'Russo One';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Russo One'), local('RussoOne-Regular'), url(https://fonts.gstatic.com/s/russoone/v8/Z9XUDmZRWg6M1LvRYsHOz8mM.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Ubuntu Regular'), local('Ubuntu-Regular'), url(https://fonts.gstatic.com/s/ubuntu/v14/4iCs6KVjbNBYlgoKfw7z.ttf) format('truetype');
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  max-width: 100%;
+  vertical-align: baseline;
+  text-align: center;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  max-width: 100%;
+}
+html,
+body {
+  font-family: 'Ubuntu', sans-serif;
+  color: #FFFFFF;
+  background-color: #191414;
+  max-width: 100%;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Russo One', sans-serif;
+  color: #1DB954;
+}
+h2 {
+  font-size: 3.2rem;
+}
+h3 {
+  font-size: 2.8rem;
+}
+p {
+  font-size: 1.6rem;
+  line-height: 1.4;
+}
+nav {
+  padding: 0.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  justify-content: right;
+}
+nav a {
+  text-decoration: none;
+  color: #191414;
+  font-size: 3rem;
+  margin: 0 1rem;
+}
+header {
+  background-color: #FFFFFF;
+  padding: 0.5rem;
+}
+header h1 {
+  margin: 2rem;
+}
+#devs {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  width: 80%;
+}
+#devs .box {
+  margin: 5rem auto;
+  justify-content: center;
+  padding: 1rem;
+}
+#devs .box h2 {
+  font-size: 5rem;
+  padding: 1rem;
+}
+#devs .box p {
+  font-size: 3rem;
+}
+#devs .box a {
+  text-decoration: none;
+  color: #1DB954;
+  font-size: 3rem;
+  padding: 1rem;
+}
+#devs .box a:hover,
+#devs .box a:focus {
+  color: #FFFFFF;
+}
+#devs .help {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  width: 100%;
+  flex-direction: column;
+}
