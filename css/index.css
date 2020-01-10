@@ -184,7 +184,7 @@ label {
   display: block;
   border-radius: 100px;
   position: relative;
-  left: 10px;
+  left: -10px;
 }
 @media (min-width: 1023px) {
   label {
@@ -196,7 +196,7 @@ label {
     display: block;
     border-radius: 100px;
     position: relative;
-    left: 150px;
+    left: 130px;
   }
 }
 label:after {
