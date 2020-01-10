@@ -1,32 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Questrial&display=swap');
+    </style>
     <link href="css/index.css" rel="stylesheet">
 </head>
 <body>
-    <nav class="topnav">
-        <a class="logo">
-            <img src="img/logo.png">
+    
+    <nav id="topnav">
+        <a href="index.html" class="logo">
+            <img id="whitelogo" src="img/nightlogo.png">
+            <img id="blacklogo" src="img/logo.png">
         </a>
+
+
+            <input type="checkbox" id="switch" /><label for="switch">Toggle</label>
+
+        <div>
+            <!-- <a href="#">LOGIN</a> -->
+            <!-- <a href="#">SIGN UP</a> -->
+            <a href="about.html">ABOUT</a>
+            <a href="#">GET STARTED</a>
+        </div>
     </nav>
 
-    <div class="container one">
+    <div id="container">
+
+    <div class="one">
         <div class="image-back">
             
-        <h1>Listen</br>Without</br>Limits</h1>
-        <h2>Discover New Music</h2>
-        <a href="#">GET STARTED</a>
+        <h1>Listen</br>Without Limits</h1>
+        <!-- <h2>Discover New Music</h2> -->
 
         </div>
 
     </div>
 
-    <div class="container two">
+    <div class="two">
         <div class="box">
             <h3 class="mobile">Enjoy</br>Your</br>Songs All</br>In One</br>Place.</h3>
             <p class="mobile">No more having</br>to switch back</br>and forth</br>between</br>applications.</br>Listen to the</br>mainstream and</br>underground all</br>in one place.</p>
@@ -35,13 +50,13 @@
             
             <img class="mobile" src="img/Group 1.png">
             <img class="mobile" src="img/Group 2.png">
-            <img class="tablet" src="#">
-            <img class="tablet" src="#">
+            <img class="tablet" src="img/Group 3.png">
+            <img class="tablet" src="img/Group 4.png">
         </div>
         <div class="box">
-            <h3 class="mobile">Find new</br>music</br>literally,</br>however</br>your</br>feeling.</h3>
+            <h3 class="mobile b">Find new</br>music</br>literally,</br>however</br>your</br>feeling.</h3>
             <p class="mobile">Easily find a</br>song or playlist</br>just for your</br>mood your in</br>with our easy</br>tag system. Find</br>songs by their</br>specific qualities</br>wether it be</br>the BPM, Tempre, or</br>dancability.</p>
-            <h3 class="tablet">Find new music</br>literally, however</br>your feeling.</h3>
+            <h3 class="tablet b">Find new music</br>literally, however</br>your feeling.</h3>
             <p class="tablet">Easily find a song or</br>playlist just for your mood</br>your in with our easy tag</br>system. Find songs by</br>their specific qualities</br>wether it be the BPM,</br>Tempre, or dancability.</p>
         </div>
         <div class="box a">
@@ -57,6 +72,51 @@
             <p class="tablet">Have the ability to share</br>songs and playlist with</br>friends and the</br>Symphinity community.</br>Earn a plaque on your</br>profile showing how</br>much of a tastemaker you</br>are.</p>
         </div>
     </div>
+</div>
+
+<script>
+
+
+  var checkbox = document.getElementById('switch');
+
+    
+
+    checkbox.addEventListener('click', function() {
+        if(this.checked) {
+            trans()
+            document.documentElement.setAttribute('data-theme', 'light')
+            unshow()
+
+        } else {
+            trans()
+            document.documentElement.setAttribute('data-theme', 'dark')
+            show()
+        }
+    })
+
+    let trans = () => {
+            document.documentElement.classList.add('transition');
+            window.setTimeout(() => {
+                document.documentElement.classList.remove('transition')
+            }, 1000)
+        }
+
+        let unshow = () => {
+            document.getElementById('whitelogo').style.display = "none";
+            document.getElementById('blacklogo').style.display = "inherit";
+            }
+
+        let show = () => {
+        document.getElementById('blacklogo').style.display = "none";
+        document.getElementById('whitelogo').style.display = "inherit";
+        }
+
+
+    
+
+    
+
+</script>
    
 </body>
 </html>
