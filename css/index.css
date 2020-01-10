@@ -1,3 +1,303 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  font-family: 'Ubuntu', sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Russo One', sans-serif;
+}
+h2 {
+  font-size: 3.2rem;
+}
+h3 {
+  font-size: 2.8rem;
+}
+p {
+  font-size: 1.6rem;
+  line-height: 1.4;
+}
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+.topnav {
+  display: flex;
+  width: 100%;
+  padding: 10px;
+  background-color: #ffffff;
+}
+.topnav img {
+  width: 150px;
+}
 .one {
-  background-image: url("AdobeStockimg.jpeg");
+  height: 754px;
+}
+.one .image-back {
+  background-image: url("MobileImg.png");
+  height: 754px;
+}
+@media (min-width: 1023px) {
+  .one .image-back {
+    background-image: url("DesktopBack.png");
+    width: 1024px;
+  }
+}
+.one h1 {
+  font-size: 36px;
+  font-family: "Abril Fatface", sans-serif;
+  color: white;
+}
+.one h2 {
+  color: white;
+}
+.one a {
+  text-decoration: none;
+  color: white;
+  background: radial-gradient(140.21% 237.58% at 78.43% 139.84%, rgba(239, 1, 159, 0.75) 0%, rgba(239, 1, 159, 0) 100%);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+  padding: 10px 15px;
+  width: 100px;
+  font-family: Muli;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 12px;
+  line-height: 15px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.two {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: #171330;
+  height: 754px;
+}
+@media (min-width: 1023px) {
+  .two {
+    height: 770px;
+  }
+}
+.two .box {
+  border: 4px solid white;
+  width: 151px;
+  height: 290px;
+  margin: 0 8px;
+  margin-top: 55px;
+  color: white;
+  text-align: center;
+}
+.two .box .tablet {
+  display: none;
+}
+.two .box h3 {
+  font-family: "Abril Fatface" sans-serif;
+  font-size: 14px;
+  line-height: 19px;
+  margin-top: 12px;
+}
+.two .box p {
+  font-family: "Montserrat" sans-serif;
+  font-size: 10px;
+  line-height: 12px;
+}
+.two .box img {
+  margin: 0 0 10px 0;
+}
+@media (min-width: 1023px) {
+  .two .box {
+    width: 404px;
+    height: 339px;
+  }
+  .two .box .mobile {
+    display: none;
+  }
+  .two .box .tablet {
+    display: inherit;
+  }
+  .two .box h3 {
+    font-size: 24px;
+    line-height: 32px;
+    margin-top: 19px;
+  }
+  .two .box p {
+    font-size: 18px;
+    line-height: 22px;
+    margin-top: 10px;
+  }
+  .two .box img {
+    margin: 0 0 10px 0;
+  }
+}
+.two .a {
+  border: 4px solid white;
+  width: 151px;
+  height: 232px;
+  margin: 0 8px;
+  color: white;
+  text-align: center;
+}
+.two .a h3 {
+  font-family: "Abril Fatface" sans-serif;
+  font-size: 14px;
+  line-height: 19px;
+  margin-top: 19px;
+}
+.two .a p {
+  font-family: "Montserrat" sans-serif;
+  font-size: 10px;
+  line-height: 12px;
+}
+@media (min-width: 1023px) {
+  .two .a {
+    width: 404px;
+    height: 339px;
+  }
+  .two .a h3 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .two .a p {
+    font-size: 18px;
+    line-height: 22px;
+  }
 }
