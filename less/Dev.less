@@ -1,0 +1,35 @@
+#devs{
+    .flexWrap();
+    width: 80%;
+
+    .box{
+        margin: 5rem auto;
+        justify-content: center;
+        padding: 1rem;
+
+        h2{
+            font-size: 5rem;
+            padding: 1rem;
+        }
+
+        p{
+            font-size: 3rem;
+        }
+
+        a{
+            text-decoration: none;
+            color: @spotGreen;
+            font-size: 3rem;
+            padding: 1rem;
+
+            &:hover, &:focus{
+                color: @dayColor;
+            }
+        }
+    }
+    .help{
+        .flexWrap();
+        width: 100%;
+        flex-direction: column;
+    }
+}
