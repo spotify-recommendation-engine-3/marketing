@@ -13,15 +13,18 @@
 <body>
     
     <nav id="topnav">
-        <a class="logo">
-            <img src="img/nightlogo.png">
+        <a href="index.html" class="logo">
+            <img id="whitelogo" src="img/nightlogo.png">
+            <img id="blacklogo" src="img/logo.png">
         </a>
-        <input type="checkbox" id="switch" /><label for="switch">Toggle</label>
+
+
+            <input type="checkbox" id="switch" /><label for="switch">Toggle</label>
+
         <div>
             <!-- <a href="#">LOGIN</a> -->
             <!-- <a href="#">SIGN UP</a> -->
             <!-- <a href="#">DOWNLOAD</a> -->
-            
             <a href="#">GET STARTED</a>
         </div>
     </nav>
@@ -73,7 +76,23 @@
 
 <script>
 
-    var checkbox = document.querySelector('input[name=theme]');
+
+  var checkbox = document.getElementById('switch');
+
+    
+
+    checkbox.addEventListener('click', function() {
+        if(this.checked) {
+            trans()
+            document.documentElement.setAttribute('data-theme', 'light')
+            unshow()
+
+        } else {
+            trans()
+            document.documentElement.setAttribute('data-theme', 'dark')
+            show()
+        }
+    })
 
     let trans = () => {
             document.documentElement.classList.add('transition');
@@ -82,15 +101,18 @@
             }, 1000)
         }
 
-    checkbox.addEventListener('change', function() {
-        if(this.checked) {
-            trans()
-            document.documentElement.setAttribute('data-theme', 'light')
-        } else {
-            trans()
-            document.documentElement.setAttribute('data-theme', 'dark')
+        let unshow = () => {
+            document.getElementById('whitelogo').style.display = "none";
+            document.getElementById('blacklogo').style.display = "inherit";
+            }
+
+        let show = () => {
+        document.getElementById('blacklogo').style.display = "none";
+        document.getElementById('whitelogo').style.display = "inherit";
         }
-    })
+
+
+    
 
     
 
